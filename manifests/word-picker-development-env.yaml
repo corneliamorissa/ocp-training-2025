@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: word-picker-dev
-        image: tinmancoding/word-picker:v2025.2
+        image: euphorissa/word-picker:v2025.2
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
@@ -60,7 +60,7 @@ spec:
   source:
     type: Git
     git:
-      uri: https://github.com/tinmancoding/ocp-training-2025.git
+      uri: https://github.com/corneliamorissa/ocp-training-2025.git
     contextDir: word-picker
   strategy:
     type: Docker
@@ -115,7 +115,7 @@ metadata:
     env: development
   name: word-picker-dev
 spec:
-  host: word-picker-dev-landrasi-dev.apps.rm3.7wse.p1.openshiftapps.com
+  host: word-picker-dev-corneliamorissa-dev.apps.rm3.7wse.p1.openshiftapps.com
   port:
     targetPort: 5000
   to:
